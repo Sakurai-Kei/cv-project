@@ -1,0 +1,70 @@
+.AppContainer {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.ApplicationFormModal {
+    display: flex;
+    align-items: center;
+    margin: 2vh;
+    width: 25%;
+    padding: 1vh;
+    justify-content: space-between;
+    background-color: rgb(51, 51, 51);
+    border-radius: 6px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.GenInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 1vh;
+    border-radius: 4px;
+}
+
+.PracExp {
+    display: flex;
+    flex-direction: column;
+}
+
+.EduExp {
+    display: flex;
+    flex-direction: column;
+}
+
+.Preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    width: 50%;
+    background-color: rgb(51, 51, 51);
+    border-radius: 6px;
+}
+
+.NamePreview, .PracExpTitle, .EduExpTitle {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.GenInfoPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.PracExpPreview, .EduExpPreview {
+    display: flex;
+    gap: 10vw;
+    margin-bottom: 2vh;
+}
