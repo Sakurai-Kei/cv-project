@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react'
 
 class EducationalExperience extends Component {
@@ -7,11 +9,10 @@ class EducationalExperience extends Component {
         return(
             <div className='EduExp'>
                 <div>Education History</div>
-                <input className='institution' placeholder='Institution Name'></input>
-                <input className='degree' placeholder='Degree'></input>
-                <input className='eduFrom' placeholder='From'></input>
-                <input className='eduTo' placeholder='To'></input>
-
+                <input className='institution' placeholder='Institution Name' />
+                <input className='degree' placeholder='Degree' />
+                <input className='eduFrom' placeholder='From' />
+                <input className='eduTo' placeholder='To' />
             </div>
         );
     }

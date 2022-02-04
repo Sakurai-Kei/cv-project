@@ -1,9 +1,23 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable no-return-assign */
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react'
 import GeneralInformation from './GeneralInformation'
 import PracticalExperience from './PracticalExperience'
 import EducationalExperience from './EducationalExperience'
 import Submit from './Submit'
 import Preview from './Preview'
+
+function isEmpty(value, original) {
+    if(value === "" || value === " - ") {
+        return original
+    }
+    
+        return value
+    
+}
 
 class ApplicationForm extends Component {
     constructor(props) {
@@ -19,13 +33,11 @@ class ApplicationForm extends Component {
                 address: "",
                 period: "",
             },
-            workExpLists: [],
             eduExp: {
                 institution: "",
                 degree: "",
                 period: "",
             },
-            eduExpLists: []
         }
 
         this.submitInfo = this.submitInfo.bind(this);
@@ -50,7 +62,6 @@ class ApplicationForm extends Component {
             }
         });
         Array.from(document.querySelectorAll('input')).forEach( input => input.value = "")
-        console.log(this.workExp.address)
     }
 
     render() {
@@ -70,15 +81,6 @@ class ApplicationForm extends Component {
                 </div>
             </div>
         );
-    }
-}
-
-function isEmpty(value, original) {
-    if(value === "" || value === " - ") {
-        return original
-    }
-    else {
-        return value
     }
 }
 

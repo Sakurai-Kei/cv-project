@@ -1,19 +1,13 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react'
 import Header from './components/Header'
 import ApplicationForm from './components/ApplicationForm'
 import Footer from './components/Footer'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      placeholder: 'some value'
-    }
-  }
-
+  
   render() {
-    const { placeholder } = this.state
     
     return(
       <div className='App'>
