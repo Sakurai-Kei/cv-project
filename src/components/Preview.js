@@ -3,33 +3,33 @@ import React, { Component } from 'react'
 class Preview extends Component {
 
     render() {
-        const {} = this.props;
+        const { obj } = this.props;
 
         return(
             <div className='Preview'>
                 <div className='GenInfoPreview'>
-                    <div className='NamePreview'>Sakurai Kei</div>
-                    <div>Phone Number</div>
-                    <div>Email</div>
+                    <div className='NamePreview'>{ obj.name }</div>
+                    <div>{ obj.phone }</div>
+                    <div>{ obj.email }</div>
                 </div>
                 <div className='PracExpTitle'>
                     Experience
                 </div>
                 <div className='PracExpPreview'>
-                    <div>Jan, 2021 - Jan, 2022</div>
+                    <div>{ obj.workExp.period }</div>
                     <div>
-                        <div>Jr Programmer</div>
-                        <div>Fake Company Ltd, Google Map</div>
+                        <div>{ obj.workExp.position }</div>
+                        <div>{ obj.workExp.company }, { obj.workExp.address }</div>
                     </div>
                 </div>
                 <div className='EduExpTitle'>
                     Education
                 </div>
                 <div className='EduExpPreview'>
-                    <div>Jan, 2016 - Jan, 2021</div>
+                    <div>{ obj.eduExp.period }</div>
                     <div>
-                        <div>University TOP</div>
-                        <div>Bachelor Degree in Google Self Study</div>
+                        <div>{ obj.eduExp.institution }</div>
+                        <div>{ obj.eduExp.degree }</div>
                     </div>
                 </div>
             </div>

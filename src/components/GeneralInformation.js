@@ -3,14 +3,13 @@ import React, { Component } from 'react'
 class GeneralInformation extends Component {
 
     render() {
-        const {} = this.props
 
         return(
             <div className='GenInfo'>
                 <div>General Information</div>
-                <input placeholder='Name'></input>
-                <input placeholder='Phone Number'></input>
-                <input placeholder='Email'></input>
+                <input className='name' placeholder='Name'></input>
+                <input className='phone' placeholder='Phone Number'></input>
+                <input className='email' placeholder='Email'></input>
 
             </div>
         );

@@ -41,6 +41,18 @@ input {
     flex-direction: column;
 }
 
+button {
+    display: flex;
+    justify-content: center;
+    background-color: slateblue;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(106, 90, 205, 75%);
+}
+
 .Preview {
     display: flex;
     flex-direction: column;
