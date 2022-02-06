@@ -1,17 +1,12 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 
-class Header extends Component {
-
-    render() {
-        const { title } = this.props;
-
-        return(
-            <div className='Header'>{ title }</div>
-        );
-    }
+function Header({ title }) {
+  return <div className="Header">{title}</div>;
 }
 
-export default Header
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default Header;

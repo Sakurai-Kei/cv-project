@@ -1,17 +1,17 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 
-class Footer extends Component {
-
-    render() {
-        const { author, year } = this.props
-
-        return(
-            <div className='Footer'>Copyright © { year } { author }</div>
-        );
-    }
+function Footer({ author, year }) {
+  return (
+    <div className="Footer">
+      Copyright © {year} {author}
+    </div>
+  );
 }
 
-export default Footer
+Footer.propTypes = {
+  author: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+};
+
+export default Footer;

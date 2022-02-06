@@ -1,20 +1,18 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 
-class Submit extends Component {
-
-    render(){
-        const { submit } = this.props
-
-        return(
-            <div>
-                <button onClick={submit}>Add</button>
-            </div>
-        );
-    }
+function Submit({ submit }) {
+  return (
+    <div>
+      <button type="submit" onClick={submit}>
+        Add
+      </button>
+    </div>
+  );
 }
 
-export default Submit
+Submit.propTypes = {
+  submit: PropTypes.func.isRequired,
+};
+
+export default Submit;
